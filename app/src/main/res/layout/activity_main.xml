@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.xuxu.view.AutoScrollTextView
+        android:id="@+id/TextViewNotice"
+        android:layout_height="30px"
+        android:layout_width="fill_parent"
+        android:text="好洋气的自动滚动文字工具，会不会滚呀"
+        android:textColor="#000"
+        android:inputType="text"
+        android:background="#EEE"
+        android:textSize="20px"></com.xuxu.view.AutoScrollTextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="文字"/>
+
+        <Button
+            android:id="@+id/btn_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="图片"/>
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="视频"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/note_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+</LinearLayout>
